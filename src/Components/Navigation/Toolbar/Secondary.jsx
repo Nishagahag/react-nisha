@@ -3,22 +3,31 @@ import {FaReact} from 'react-icons/fa'
 import {HiSearch} from 'react-icons/hi'
 import {IoLanguage} from 'react-icons/io5'
 import {BsBoxArrowUpRight} from 'react-icons/bs';
-import {Link} from 'react-router-dom';
+import {Link,useLocation} from 'react-router-dom';
 function Secondary() {
+  const location=useLocation()
+  console.log(location)
   return (
     <div className='flex justify-between text-white bg-black px-5 py-3 items-center'>
         <div className='flex items-center gap-2 text-blue-300 text-2xl'>
             <div><FaReact/></div>
-            <div className="font-bold ">React</div>
+            <Link to='Intro'>
+               <div className="font-bold ">React</div>
+            </Link>
         </div>
         <div className='flex gap-3'>
-           <div className=' hover:bg-blue-200 px-3 py-2'>Docs</div>
-           
-           <div className=' hover:bg-blue-200 px-3 py-2'>Tutorial</div>
-           <Link to='/About'>
-           <div className=' hover:bg-blue-200 px-3 py-2'>Blog</div>
+            <Link to='/About'>
+               <div className={`${location.pathname==='/About'?'bg-blue-200 ':''} hover:bg-blue-200 px-3 py-2`}>Docs</div>
+              </Link> 
+              <Link to='/Layout'>
+               <div className={`${location.pathname==='/Layout'?'bg-blue-200 ':''} hover:bg-blue-200 px-3 py-2`}>Tutorial</div>
+               </Link>
+           <Link to='/Labs'>
+           <div className={`${location.pathname==='/'?'bg-blue-200 ':''} hover:bg-blue-200 px-3 py-2`}>Blog</div>
            </Link>
-           <div className=' hover:bg-blue-200 px-3 py-2'>Community</div>
+           <Link to='/Support'>
+           <div className={`${location.pathname==='/'?'bg-blue-200 ':''} hover:bg-blue-200 px-3 py-2`}>Community</div>
+           </Link>
         </div>
         <div className='flex bg-[#333] items-center gap-1 px-1'>
             <div><HiSearch/></div>
