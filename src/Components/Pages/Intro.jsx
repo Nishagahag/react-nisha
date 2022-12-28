@@ -11,7 +11,7 @@ function Intro() {
            <div className='text-blue-300'>Take Tutorial</div>
        </div>
    </div>
-   <div className='flex justify-between mt-14 w-10/12 mx-auto text-2xl text-slate-300'>
+   <div className='flex justify-between mt-14 w-10/12 mx-auto text-2xl text-slate-300 font-light'>
         <div>Declarative</div>
         <div>Component-Based</div>
         <div>Learn Once, Write Anywhere</div>

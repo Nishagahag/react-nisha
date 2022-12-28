@@ -6,6 +6,8 @@ import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import About from './Components/Pages/About';
 import Intro from './Components/Pages/Intro';
 import Layout from './Components/Pages/Layout';
+import Support from './Components/Pages/Support';
+import Labs from './Components/Pages/Labs';
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
             <Route path='/Intro' exact element={<Intro/>}/>
             <Route path='/About' exact element={<About/>}/>
             <Route path='/About' exact element={<Layout/>}/>
+            <Route path='/About' exact element={<Labs/>}/>
+            <Route path='/About' exact element={<Support/>}/>
+
 
          </Routes>
 
