@@ -10,7 +10,6 @@ function About() {
              <div><span className='font-bold'>React</span> is a JavaScript library for building user interfaces. Learn what React is all about on<span className='bg-blue-100'>our homepage</span>  or <span className='bg-blue-100'>in the tutorial.</span></div>
          </div>
        <div>
-        {/* <div className='border-2'></div> */}
           <div className='flex h-66 w-full justify-between flex-col mt-8  gap-4'>
              <li ><span className='bg-blue-100'>Try React </span></li>
              <li><span  className='bg-blue-100'>Learn React</span></li>
@@ -40,8 +39,13 @@ function About() {
             <li>If you prefer to learn by doing, start with our practical tutorial.</li>
             <li>If you prefer to learn concepts step by step, start with our guide to main concepts.</li><br />
               Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you will get the hang of it.</div>
-          <div>First Examples</div>
-          <div></div>
+          <div className='text-2xl font-black '>First Examples</div>
+             <div>The React homepage contains a few small React examples with a live editor. Even if you don’t know anything about React yet, try changing their code and see how it affects the result.</div>
+          <div className='text-2xl font-black '>React for Beginners</div>
+             <div>If you feel that the React documentation goes at a faster pace than you’re comfortable with, check out this overview of React by Tania Rascia. It introduces the most important React concepts in a detailed, beginner-friendly way. Once you’re done, give the documentation another try!</div>
+          <div className='text-2xl font-black '>React for Designers</div>
+             <div>If you’re coming from a design background, these resources are a great place to get started.</div>
+             <div></div>
 
         </div>
        </div>
